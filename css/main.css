@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+/* NAVIGATION */
+.navbar {
+  padding: 1.5% 20%;
+}
+
+.profiles {
+  color: #fff;
+  background-color: #464545;
+  border-radius: 10px;
+}
+
+/* HEADER /  CAROUSEL */
+.carousel-inner {
+  height: 80vh;
+}
+.carousel-item {
+  transition: 0.6s ease-in-out left;
+}
+
+/* FEATURE */
+.feature {
+  margin: 10% 5%;
+}
+.items i {
+  font-size: 6rem;
+  color: #18c352;
+  margin-bottom: 2rem;
+}
+
+.items .fa-lightbulb {
+  color: #f2f62f;
+}
