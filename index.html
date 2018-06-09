@@ -7,6 +7,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<!-- TITLE -->
 		<title>Colorful Flat</title>
+		<!-- ANIMATE CSS -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
 		<!-- GOOGLE FONT -->
 		<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700" rel="stylesheet">
 		<!-- FONTAWESOME -->
@@ -18,8 +20,8 @@
 	</head>
 	<body>
 			<!-- NAVIGATION -->
-			<nav class="navbar navbar-expand-lg navbar-light bg-light">
-					<a class="navbar-brand text-uppercase pr-5" href="index.html"><i class="fas fa-star pr-2"></i>colorful flat</a>
+			<nav class="navbar navbar-expand-lg navbar-dark">
+					<a class="navbar-brand text-uppercase pr-5 animated fadeInLeft" href="index.html"><i class="fas fa-star pr-2"></i>colorful flat</a>
 					<!-- this is for small screen /  toggler icon -->
 				  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 				    <span class="navbar-toggler-icon"></span>
@@ -36,17 +38,27 @@
 				  </div>
 		 	</nav>
 
-			<!-- HEADER -->
-			<div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
-			  <div class="carousel-inner">
+			<!-- HEADER / CAROUSEL -->
+			<div id="carouselExampleFade" class="carousel slide carousel-fade Indicators" data-ride="carousel">
+				<!-- CAROUSEL INDICATORS -->
+				<ol class="carousel-indicators">
+			    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+			    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+			    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+			  </ol>
+				<!-- CAROUSEL INNNER / IMAGE -->
+				<div class="carousel-inner">
 			    <div class="carousel-item active">
-			      <img class="d-block w-100" src="img/template1.jpg?auto=yes&bg=777&fg=555&text=First slide" alt="First slide">
+			      <img class="d-block w-100" src="img/template1.jpg?auto=yes&bg=777&fg=555&text=First%20slide" alt="First slide">
+						<div class="carousel-caption">
+					    <h2 class="font-weight-bold display-4">This Template is Awesome!!!</h2>
+					  </div>
 			    </div>
 			    <div class="carousel-item">
-			      <img class="d-block w-100" src="img/template2.jpg?auto=yes&bg=666&fg=444&text=Second slide" alt="Second slide">
+			      <img class="d-block w-100" src="img/template2.jpg?auto=yes&bg=666&fg=444&text=Second%20slide" alt="Second slide">
 			    </div>
 			    <div class="carousel-item">
-			      <img class="d-block w-100" src="img/template3.jpg?auto=yes&bg=555&fg=333&text=Third slide" alt="Third slide">
+			      <img class="d-block w-100" src="img/template3.jpg?auto=yes&bg=555&fg=333&text=Third%20slide" alt="Third slide">
 			    </div>
 			  </div>
 			  <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
@@ -63,26 +75,213 @@
 			<div class="container-fluid">
 				<div class="row feature">
 					<div class="col-md-4 px-4 text-center items">
-						<i class="fas fa-desktop"></i>
+						<a href="#"><i class="fas fa-desktop"></i></a>
 						<h4 class="pb-3">Flat Design</h4>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 					</div>
 					<div class="col-md-4 px-4 text-center items">
-						<i class="far fa-lightbulb"></i>
+						<a href="#"><i class="far fa-lightbulb"></i></a>
 						<h4 class="pb-3">Great Ideas</h4>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 					</div>
 					<div class="col-md-4 px-4 text-center items">
-					  <i class="fas fa-mobile-alt"></i>
+					  <a href="#"><i class="fas fa-mobile-alt"></i></a>
 						<h4 class="pb-3">Broswer Compatibility</h4>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 					</div>
 				</div>
 			</div>
 
+			<!-- SECTION / RECENT WORKS -->
+			<section class="works text-center">
+				<h2 class="text-uppercase font-weight-bold">recent works</h2>
+				<p class="my-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				<div class="btn-inline-block mb-5">
+					<button type="button" class="btn btn-info">ALL</button>
+					<button type="button" class="btn btn-warning">WEB</button>
+					<button type="button" class="btn btn-outline-info">MOBILE</button>
+					<button type="button" class="btn btn-outline-info">PHOTOGRAPHY</button>
+					<button type="button" class="btn btn-outline-warning">DESIGN</button>
+					<button type="button" class="btn btn-outline-info">TYPE</button>
+				</div>
 
+				<div class="container mb-4">
+					<div class="row">
+						<div class="col-md-4 ">
+							<img src="img/work1.jpg" alt="my work" class="items">
+						</div>
+						<div class="col-md-4">
+							<img src="img/work2.jpg" alt="my work" class="items">
+						</div>
+						<div class="col-md-4">
+							<img src="img/work3.jpg" alt="my workmy work" class="items">
+						</div>
+					</div>
+				</div>
 
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4">
+							<img src="img/work4.jpg" alt="my work" class="items">
+						</div>
+						<div class="col-md-4">
+							<img src="img/work5.jpg" alt="my work" class="items">
+						</div>
+						<div class="col-md-4">
+							<img src="img/work6.jpg" alt="my work" class="items">
+						</div>
+					</div>
+				</div>
 
+				<button type="button" class="btn btn-dark mt-5">SHOW MORE</button>
+			</section>
+
+			<!-- SECTION / TEMPLATE -->
+			<section class="template">
+			<div class="card container border-0 mb-4 bg-transparent">
+			  <div class="card-body">
+					<div class="image-box d-inline-block pr-5">
+						<img src="img/screen.png" alt="">
+					</div>
+					<div class="text-box d-inline-block">
+						<h5 class="card-title">Layered Neatly Photoshop Template</h5>
+						<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+						<a href="#" class="btn btn-success">SHOW MORE</a>
+					</div>
+			  </div>
+			</div>
+			<hr>
+			<div class="card container border-0 mt-4 bg-transparent">
+			  <div class="card-body">
+					<div class="text-box d-inline-block">
+						<h5 class="card-title">Layered Neatly Photoshop Template</h5>
+						<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+						<a href="#" class="btn btn-warning">SHOW MORE</a>
+					</div>
+					<div class="image-box d-inline-block pl-5">
+						<img src="img/screen.png" alt="">
+					</div>
+			  </div>
+			</div>
+		</section>
+
+		<!-- SECTION PROFILE / MEET OUR TEAM -->
+		<section class="profile text-center">
+			<h2 class="text-uppercase font-weight-bold">meet our team</h2>
+			<p class="my-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+			<div class="container">
+				<div class="row mx-auto">
+					<div class="col-md-4 card rounded px-0" style="max-width: 18rem;">
+					  <img class="card-img-top" src="img/profile1.jpg" alt="Card image">
+					  <div class="card-body">
+					    <h5 class="card-title">JOHN SMITH</h5>
+					    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					    <a href="#"><i class="fab fa-facebook-f"></i></a>
+							<a href="#"><i class="fab fa-twitter"></i></a>
+							<a href="#"><i class="fab fa-pinterest-p"></i></a>
+					  </div>
+					</div>
+
+					<div class="col-md-4 card rounded px-0" style="max-width: 18rem;">
+					  <img class="card-img-top" src="img/profile2.jpeg" alt="Card image">
+					  <div class="card-body">
+					    <h5 class="card-title">SARAH TEMPLE</h5>
+					    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					    <a href="#"><i class="fab fa-facebook-f"></i></a>
+							<a href="#"><i class="fab fa-twitter"></i></a>
+							<a href="#"><i class="fab fa-pinterest-p"></i></a>
+					  </div>
+					</div>
+
+					<div class="col-md-4 card rounded px-0" style="max-width: 18rem;">
+					  <img class="card-img-top" src="img/profile3.jpg" alt="Card image">
+					  <div class="card-body">
+					    <h5 class="card-title">DON OXFORD</h5>
+					    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					    <a href="#"><i class="fab fa-facebook-f"></i></a>
+							<a href="#"><i class="fab fa-twitter"></i></a>
+							<a href="#"><i class="fab fa-pinterest-p"></i></a>
+					  </div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- SECTION / RECENT POST -->
+		<section class="recent-post text-center">
+			<h2 class="text-uppercase font-weight-bold">recent post</h2>
+			<p class="my-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+			<div class="container">
+				<div class="row mx-auto">
+					<div class="col-md-4 card rounded px-0" style="max-width: 18rem;">
+						<img class="card-img-top" src="img/post1.png" alt="Card image">
+						<div class="card-body">
+							<h5 class="card-title">Really Interesting Post</h5>
+							<h6 class="font-italic">October 28</h6>
+							<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						</div>
+					</div>
+
+					<div class="col-md-4 card rounded px-0" style="max-width: 18rem;">
+						<img class="card-img-top" src="img/post2.jpeg" alt="Card image">
+						<div class="card-body">
+							<h5 class="card-title">Really Interesting Post</h5>
+							<h6 class="font-italic">October 28</h6>
+							<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+						</div>
+					</div>
+
+					<div class="col-md-4 card rounded px-0" style="max-width: 18rem;">
+						<img class="card-img-top" src="img/post3.jpg" alt="Card image">
+						<div class="card-body">
+							<h5 class="card-title">Really Interesting Post</h5>
+							<h6 class="font-italic">October 28</h6>
+							<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<button type="button" class="btn btn-outline-info mt-5">SHOW MORE</button>
+		</section>
+
+		<!-- SECTION / CONTACT US -->
+		<section class="contact-us text-center text-white">
+			<h2 class="text-uppercase font-weight-bold">contact us</h2>
+			<p class="my-4 w-50 mx-auto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+			<form class="container form-wrapper">
+				<div class="form-group">
+			    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name:">
+			  </div>
+			  <div class="form-group">
+			    <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="Email:">
+			  </div>
+			  <div class="form-group">
+			    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Message:"></textarea>
+			  </div>
+				<button type="button" class="btn btn-outline-light">SUBMIT</button>
+			</form>
+		</section>
+
+		<!-- FOOTER -->
+		<footer>
+			<div class="icon-wrapper mx-1">
+				<a href="#"><i class="fab fa-facebook-f"></i></a>
+				<a href="#"><i class="fab fa-twitter"></i></a>
+				<a href="#"><i class="fab fa-pinterest-p"></i></a>
+				<a href="#"><i class="fab fa-instagram"></i></a>
+			</div>
+
+			<div class="footer-text text-white">
+				<p>
+					<a href="#">ABCD Web Desgin</a>
+					Copyright	&#169; 2018 | Powerd by <a href="#">WordPress</a>
+				</p>
+			</div>
+		</footer>
 
 
 <!-- JQUERY -->
@@ -92,9 +291,6 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 		<!-- Bootstrap JS plugin / This makes bootstrap 4 JS work -->
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-
-
-		</body>
 
 	</body>
 </html>

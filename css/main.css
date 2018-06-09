@@ -8,26 +8,36 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 
-/* NAVIGATION */
-.navbar {
-  padding: 1.5% 20%;
+/*======= NAVIGATION =======*/
+nav.navbar {
+    background-color:#343434;
 }
-
+.navbar {
+  padding: 1.5% 25%;
+}
 .profiles {
   color: #fff;
   background-color: #464545;
   border-radius: 10px;
 }
 
-/* HEADER /  CAROUSEL */
+/*======= HEADER /  CAROUSEL =======*/
 .carousel-inner {
-  height: 80vh;
+  height: 90vh;
+}
+.carousel-indicators li {
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
 }
 .carousel-item {
   transition: 0.6s ease-in-out left;
 }
+.carousel-item img {
+  height: 90vh;
+}
 
-/* FEATURE */
+/*======== FEATURE =======*/
 .feature {
   margin: 10% 5%;
 }
@@ -39,4 +49,103 @@ body {
 
 .items .fa-lightbulb {
   color: #f2f62f;
+}
+
+/*======= SECTION / RECENT WORKS =======*/
+section.works {
+  background-color: rgb(188, 252, 227);
+  padding: 8% 0;
+}
+section .items {
+  width: 100%;
+  border-radius: 5px;
+}
+
+/*======= SECTION / TEMPLATE =======*/
+section.template {
+  background-color: #f5f5f5;
+  padding: 8% 0;
+}
+.image-box {
+  width: 16rem;
+}
+.image-box img {
+  width: 100%;
+}
+section hr {
+  width: 75%;
+  margin: 0 auto;
+}
+
+/*======= SECTION / MEET OUR TEAM =======*/
+.profile {
+  background-color: #fed3e6;
+  padding: 8% 0;
+}
+.profile .container .row .card {
+  margin: 0 auto;
+}
+.profile i {
+  font-size: 1.6rem;
+  color: #fff;
+  border-radius: 50%;
+  padding: 12px;
+}
+.profile i.fa-facebook-f {
+  background-color: #3B5998;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+.profile i.fa-twitter {
+  background-color: #1DA1F2;
+}
+.profile i.fa-pinterest-p {
+  background-color: #BD081C;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/*======= SECTION / RECENT POST =======*/
+.recent-post {
+  background-color:rgb(181, 248, 250);
+  padding: 8% 0;
+}
+.recent-post .container .row .card {
+  margin: 0 auto;
+}
+
+/*======= SECTION / CONTACT FORM =======*/
+.contact-us {
+  background-color:#6a6e6e;
+  padding: 8% 0;
+}
+.form-wrapper {
+  width: 50%;
+}
+/*======= FOOTER ========*/
+footer {
+  background-color:#343434;
+  padding: 1% 0;
+  position: relative;
+}
+
+.icon-wrapper i {
+  color: #fff;
+  font-size: 1.3rem;
+  background-color: #211f1f;
+  border-radius: 50%;
+  padding: 1.1rem;
+}
+.icon-wrapper i.fa-facebook-f {
+  padding-left: 1.3rem;
+  padding-right: 1.3rem;
+  margin-left: 50px;
+}
+.footer-text {
+  position: absolute;
+  top: 20px;
+  right: 50px;
+}
+.footer-text a {
+  color: rgb(208, 222, 47);
 }
